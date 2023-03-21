@@ -46,8 +46,8 @@ app.get('/client', (rq, res) => {
 	res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-app.get('/', (req, res) => {
-	const { html, state } = getHtml();
+app.get('*', (req, res) => {
+	const { html, state } = getHtml(req.url);
 	const htmlPage = createTemplate(html, state);
 	res.send(htmlPage);
 });

@@ -1,8 +1,11 @@
 import React from 'react';
-import App from './App';
 import { Provider } from 'react-redux';
 import createStore from './redux/store';
 import { hydrateRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+// import { renderRoutes } from 'react-router-config';
+// import routes from './routes';
+import RouteComponent from './routes';
 
 const container = document.getElementById('root');
 
@@ -16,6 +19,8 @@ const store = createStore(state);
 hydrateRoot(
 	container,
 	<Provider store={store}>
-		<App />
+		<BrowserRouter>
+			<RouteComponent />
+		</BrowserRouter>
 	</Provider>
 );
