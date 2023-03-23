@@ -1,0 +1,65 @@
+{
+  "hash": "92bb7d8745c2a4abc4b4",
+  "publicPath": "",
+  "outputPath": "/Users/manishprajapati/Documents/personal/SSReact/public",
+  "assetsByChunkName": {
+    "main": [
+      "server.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "server.js",
+      "size": 1667761,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "server.js.map"
+        }
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "main"
+      ],
+      "auxiliaryChunks": []
+    }
+  ],
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "server.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "main",
+      "files": [
+        "server.js"
+      ]
+    }
+  ]
+}
