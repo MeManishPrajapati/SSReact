@@ -19,4 +19,8 @@ const Home = () => {
 	);
 };
 
+export const getServerSideProps = (state, dispatch) => {
+	dispatch(decreaseCounter());
+};
+
 export default Home;

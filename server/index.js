@@ -4,6 +4,7 @@ require('@babel/register');
 
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 
 // https://bytearcher.com/articles/refresh-changes-browser-express-livereload-nodemon/
 // When watch-client script is running, we are building frontend and storing in dist folder
@@ -20,10 +21,19 @@ liveReloadServer.watch(path.resolve(__dirname, '../dist'));
 
 const app = express();
 
+const corsOption = {
+	origin: ['http://localhost:3000'],
+};
+app.use(cors(corsOption));
+//if you want in every domain then
+// app.use(cors());
+
 // When request come on dist, load items from dist folder
 // So when browser request for domain/dist/react-script.js, it'll find in dist folder
-app.use('/dist', express.static(path.resolve(__dirname, '../dist')));
-app.use('/public', express.static(path.resolve(__dirname, '../public')));
+// app.use('/dist', express.static(path.resolve(__dirname, '../dist')));
+// app.use('/public', express.static(path.resolve(__dirname, '../public')));
+app.use(express.static(path.resolve(__dirname, '../public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 // monkey patch every served HTML so they know of changes
 app.use(connectLivereload());
@@ -47,7 +57,8 @@ app.get('/client', (rq, res) => {
 });
 
 app.get('*', (req, res) => {
-	const { html, state } = getHtml(req.url);
-	const htmlPage = createTemplate(html, state);
+	console.log('in *');
+	const { html, state, scriptTags } = getHtml(req.url);
+	const htmlPage = createTemplate(html, state, scriptTags);
 	res.send(htmlPage);
 });

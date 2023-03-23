@@ -1,17 +1,23 @@
 {
-  "hash": "92bb7d8745c2a4abc4b4",
-  "publicPath": "",
+  "hash": "6a0c4e85f714e3f7b20a",
+  "publicPath": "/",
   "outputPath": "/Users/manishprajapati/Documents/personal/SSReact/public",
   "assetsByChunkName": {
     "main": [
       "server.js"
+    ],
+    "features-Home-Home": [
+      "features-Home-Home.1fbe6032b0caaf461dea.js"
+    ],
+    "features-Products-Products": [
+      "features-Products-Products.544cd9eb488c5b63108a.js"
     ]
   },
   "assets": [
     {
       "type": "asset",
       "name": "server.js",
-      "size": 1667761,
+      "size": 1692049,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -30,6 +36,60 @@
       "filteredRelated": 1,
       "chunks": [
         "main"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "features-Home-Home.1fbe6032b0caaf461dea.js",
+      "size": 2879,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "1fbe6032b0caaf461dea",
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "features-Home-Home.1fbe6032b0caaf461dea.js.map"
+        }
+      },
+      "chunkNames": [
+        "features-Home-Home"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "features-Home-Home"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "features-Products-Products.544cd9eb488c5b63108a.js",
+      "size": 1271,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "544cd9eb488c5b63108a",
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "features-Products-Products.544cd9eb488c5b63108a.js.map"
+        }
+      },
+      "chunkNames": [
+        "features-Products-Products"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "features-Products-Products"
       ],
       "auxiliaryChunks": []
     }
@@ -51,6 +111,40 @@
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
+    },
+    "features-Home-Home": {
+      "name": "features-Home-Home",
+      "chunks": [
+        "features-Home-Home"
+      ],
+      "assets": [
+        {
+          "name": "features-Home-Home.1fbe6032b0caaf461dea.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "features-Products-Products": {
+      "name": "features-Products-Products",
+      "chunks": [
+        "features-Products-Products"
+      ],
+      "assets": [
+        {
+          "name": "features-Products-Products.544cd9eb488c5b63108a.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
     }
   },
   "generator": "loadable-components",
@@ -59,6 +153,18 @@
       "id": "main",
       "files": [
         "server.js"
+      ]
+    },
+    {
+      "id": "features-Home-Home",
+      "files": [
+        "features-Home-Home.1fbe6032b0caaf461dea.js"
+      ]
+    },
+    {
+      "id": "features-Products-Products",
+      "files": [
+        "features-Products-Products.544cd9eb488c5b63108a.js"
       ]
     }
   ]

@@ -1,4 +1,4 @@
-export default function createTemplate(content, state) {
+export default function createTemplate(content, state, scriptTags) {
 	return `
     <!DOCTYPE html>
     <html lang="en">
@@ -14,9 +14,14 @@ export default function createTemplate(content, state) {
         <script>
         window.state = ${JSON.stringify(state)}
         </script>
-        <script defer src="public/server.js">
-        </script>
+        <script>var exports = {};</script>
+        ${scriptTags}
     </body>
     </html>
     `;
+}
+{
+	// <script>var exports = {};</script>
+	/* <script defer src="/public/server.js">
+        </script> */
 }
